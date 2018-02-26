@@ -1,0 +1,21 @@
+body{
+	background-image: url(ocean.jpg);
+	 background-size: 100%; 
+	 background-position: 0 0; 
+	 background-repeat: no-repeat; 
+	}
+
+
+	h1 {
+		font-family: 'Krona One', sans-serif;
+		font-size: 100px;
+		margin-top: 36%;
+
+	}
+
+
+	h2 {
+		font-family: font-family: 'Merriweather', serif;
+		font-size: 50px;
+		margin-left: 70%;
+	}
