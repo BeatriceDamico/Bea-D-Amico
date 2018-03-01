@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>birth</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Coiny|Krona+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="birth8.css">
+	<!-- <script type="text/javascript" src="yesterday.js"></script> -->
+
+<script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    
+    // var s = today.getSeconds();
+    m = checkTime(m);
+    // s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+ </script>
+
+
+
+
+
+
+
+</head>
+<body>
+
+<body onload="startTime()">
+
+
+
+<body style="background-color: #D36288">
+
+<div class="beat">
+<embed src="Heartbeat.mp3" Hidden="true" loop="true">
+		</embed>
+		</div>
+
+
+<div id="txt">
+</div>
+
+
+<h1>
+<div id="birthday" class="container">
+			<div class="birthday-container">
+			Time of birth:
+			</div>
+		</div>
+		</h1>
+
+
+
+
+
+
+<h2>
+You are about to enter the 
+<br>
+emotional journey of life. 
+</h2>
+
+<br>
+<br>
+
+
+
+
+<!-- <h4>
+	emotional
+</h4>
+ -->
+
+
+		
+
+	<a class="person" href="start.html">
+	<!-- <div id="figure"> -->
+		<img src="https://media.giphy.com/media/65TmIxFunIXHuyKNi9/giphy.gif">
+	<!-- </div> -->
+	</a>
+
+
+<h3>
+	See you at the finish line.	
+</h3>
+
+
+
+
+</body>
+</html>

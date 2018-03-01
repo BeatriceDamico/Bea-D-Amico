@@ -1,0 +1,70 @@
+#birth {
+	position:absolute;
+}
+
+
+h1 {
+	font-family: 'Coiny', cursive;
+	/*position:absolute;*/
+	font-size: 70px;
+	color: white;
+	display: inline;
+	/*margin-top: 1%;*/
+
+}
+
+
+
+/*I want to be able to move h2 down, without disrupting top 
+and bottom
+ALSO- how to move h1 more the right? */
+
+
+h2 {
+font-family: 'Krona One', sans-serif;
+font-size: 20px;
+margin-left: 41%;
+/*position: absolute;*/
+margin-top: 4%;
+color: white;
+/*margin-top: 40%;*/
+
+
+}
+
+
+/*HELP ^*/
+
+
+
+.person {
+	
+	/*position: absolute;*/
+	margin-left: 40%
+	/*margin-top: 80%;*/
+	/*float: 50%;*/
+
+}
+
+
+h3{
+	font-family: 'Krona One', sans-serif;
+	font-size: 20px;
+	margin-left: 40%;
+	margin-top: 5%;
+	/*display: inline;*/
+}
+
+
+
+#txt {
+	font-family: 'Coiny', cursive;
+	position: absolute;
+	font-size: 70px;
+	display: inline;
+	color: white;
+	margin-left: 45%;
+	
+
+}
+
