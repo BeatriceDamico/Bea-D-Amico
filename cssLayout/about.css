@@ -1,6 +1,25 @@
+
+
 .container {
-	color: blue;
+	font-family: 'Abril Fatface', cursive;
+	color: white;
 	max-width:  50%;
-	margin-top: 20%;
+	margin-top: 5%;
 	font-size: 30px;
+	margin-left: 27%;
 }
+
+
+.body {
+	font-family: 'Ubuntu', sans-serif;
+	color: blue;
+	margin-top: 10%;
+	font-size: 20px;
+}
+
+
+.button {
+	margin-left: 67%; 
+	margin bottom: 70%;
+}
+

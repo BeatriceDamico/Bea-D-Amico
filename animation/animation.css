@@ -1,0 +1,58 @@
+
+.shake {
+	animation: shake 5s;
+	animation-iteration-count: infinite;
+}
+
+
+
+.shake-ease {
+	animation: shake 5s infinite cubic-bezier (.27,.91,.69,-0.23); 
+}
+
+
+.box {
+	border-style: solid;
+	border-width: 1px;
+	width: 100px;
+	height: 100px;
+	background-color: #0000FF;
+	transition: width 2s, height 2s, background-color 2s, transform 2s; 
+}
+
+
+.box:hover {
+	background-color: #FFCCCC;
+	width: 200px;
+	height: 200px;
+	transform: rotate(180deg);
+}
+
+
+@keyframes shake {
+	from, to {
+		-webkit-transform: translate3d (0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	10%, 30%, 50%, 70%, 90% {
+		-webkit-transform: translate3d (-10px,0,0);
+		transform: translate3d(-10px,0,0);
+	}
+
+	20%, 40%, 60%, 80%, {
+		-webkit-transform: translate3d (10px,0,0);
+		transform: translate3d(10px,0,0);
+	} 
+}
+
+
+
+
+
+
+/*animaiton name
+duration
+delay
+direction
+fill mode*/
