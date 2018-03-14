@@ -53,13 +53,102 @@ body {
 
 
 
+.logo,
+/*.base, .pages, */{
+  position: relative;
+}
+
+.logo {
+  position:absolute;
+  margin: auto;
+  top: 50%;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  width: 100px;
+  height: 200px;
+   transition: width 2s, height 2s, background-color 2s, transform 2s; 
+}
+
+
+.logo:hover {
+  width: 500px;
+  height: 400px;
+  transform: rotate(360deg);
+}
 
 
 
+.circle {
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 300px;
+  height: 300px;
+  border: 16.5px solid #000;
+  border-radius: 300px;
+}
+
+
+.square {
+  position: absolute;
+  transform:rotate(150deg);
+  top: -40px;
+  left: 6px;
+  width: 300px;
+  height: 250px;
+  border: 16.5px solid #000;
+
+}
 
 
 
-.container,
+.rectangle1 {
+  position: absolute;
+  top: 145px;
+  left: 320px;
+  width: 18px;
+  height: 160px;
+  background: #000;
+
+}
+
+
+.triangle {
+  position:absolute;
+  top: 310px;
+  left: 320px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 18px solid #000;
+}
+
+.rectangle2 {
+  position: absolute;
+  top: 30px;
+  left: 240px;
+  width: 18px;
+  height: 280px;
+  background: #000;
+
+}
+
+
+.rectangle3 {
+  position: absolute;
+  top: -47px;
+  left: 146px;
+  width: 18px;
+  height: 310px;
+  background: #000;
+
+}
+
+
+
+/*.container,
 .hat, .ear, .face, .inner, .eye, .snout {
   position: absolute;
 }
@@ -72,18 +161,12 @@ body {
   right: 0;
   width: 200px;
   height: 100px;
-}
-
-
-/*.hat {
-  top: -190px;
-  left: -10px;
-  width: 40px;
-  height:80px;
-  background: #000;
 }*/
 
-.ear {
+
+
+
+/*.ear {
   top: -15px;
   left: -2px;
   width: 80px;
@@ -197,30 +280,6 @@ body {
   height: 12px;
   border: 2px solid #F05D5E;
   border-radius: 20px;
-}
+}*/
 
 
-.bookContainer,
-.base, .pages, {
-  position: relative;
-}
-
-.bookContainer {
-  position:absolute;
-  margin: auto;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100px;
-  height: 200px;
-}
-
-
-.base {
-  /*top: -190px;*/
-  left: -10px;
-  width: 40px;
-  height:80px;
-  background: #000;
-}
