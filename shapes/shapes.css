@@ -200,12 +200,13 @@ body {
 }
 
 
-.cup,
+.bookContainer,
 .base, .pages, {
-  position: absolute;
+  position: relative;
 }
 
-.container {
+.bookContainer {
+  position:absolute;
   margin: auto;
   top: 0;
   bottom: 0;
