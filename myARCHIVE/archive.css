@@ -1,13 +1,12 @@
 font-family: 'PT Sans', sans-serif;
-font-family: 'Slabo 27px', serif;
-font-family: 'Josefin Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
 
 
 
 *{
 	/*border:0;*/
 	/*margin:0;*/
-	padding:0;
+	/*padding:0;*/
 	box-sizing:border-box;
 }
 
@@ -17,6 +16,42 @@ html,body{
 
 }
 
+
+
+
+
+
+/*a:focus {
+  border-bottom: 1px solid;
+  background: #BAE498;
+}*/
+
+a {
+  text-decoration: none;
+  color: white ;
+}
+
+
+a.color {
+  text-decoration: none;
+  color: black ;
+}
+
+
+
+a:active {
+	/*text-decoration: outline;
+	background-color: black;*/
+	background: white;
+  color: white;
+
+}
+
+
+/*a:writing{
+  text-decoration: none;
+  color: white ;
+}*/
 
 
 
@@ -30,14 +65,96 @@ html,body{
 }
 
 
-
-/*.stripe {
-	
+.containergraphics {
 	width:100%;
-	height:10%;
-	border: 2px;
-	border-color: #000;
-}*/
+	/*height: 100%;*/
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+	
+}
+
+/*#b0e9ff*/
+
+.containerphotography {
+	width:100%;
+	/*height: 100%;*/
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+
+	/*#EA9F3B*/
+	
+}
+
+/*#b0e9ff the light blue #e6821e the orange*/
+
+/*#299AD1 reg blue*/
+
+
+.containeranimation {
+	width:100%;
+	/*height: 100%;*/
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+	
+}
+
+
+
+.containervideo {
+	width:100%;
+	/*height: 100%;*/
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+	
+}
+
+
+.containerwriting {
+	width:100%;
+	/*height: 100%;*/
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+	color: #000;
+	
+}
+
+
+
+.containerabout {
+	width:100%;
+	height: auto;
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 1;
+	background-color: #1a1a1a ;
+	scroll-behavior: none;
+	
+}
+
+
+
+
+
+
+
+
+
 
 
 .work {
@@ -45,19 +162,26 @@ html,body{
 	font-size:40px;
 	color:white;
 	text-align:right;
-	margin-right: 20px;
-	/*position: relative;*/
+	/*margin: 0 auto;*/
 	top: 100px;
+	padding-right: 10%;
+	width: 100%;
+	margin-right: 30px;
 }
 
 
 
+
 .name {
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
 	position:absolute;
+	color: white;
+	font-size:24px;
 	width: 100%;
 	height: 10%;
-	background-color: red;
+	background-color: #8D005D;
+	padding-left: 3%;
+
 }
 
 
@@ -67,9 +191,9 @@ html,body{
 	width: 100%;
 	height: 10%;
 	top: 100px;
-	font-size: 40px;
-	font-color: white;
-	background-color: blue;
+	background-color: #b0e9ff;
+	display: block;
+
 
 }
 
@@ -80,7 +204,8 @@ html,body{
 	height: 10%;
 	top: 200px;
 	float: right;
-	background-color: green;
+	background-color: #EA9F3B;
+	display: block;
 }
 
 
@@ -90,7 +215,8 @@ html,body{
 	height: 10%;
 	top: 300px;
 	float: right;
-	background-color: yellow;
+	background-color: #662D80;
+	display: block;
 
 }
 
@@ -101,7 +227,8 @@ html,body{
 	height: 10%;
 	top: 400px;
 	float: right;
-	background-color: pink;
+	background-color: #EBDD21;
+	display: block;
 
 }
 
@@ -112,7 +239,8 @@ html,body{
 	height: 10%;
 	top: 500px;
 	float: right;
-	background-color: orange;
+	background-color: #1B1464;
+	display: block;
 
 }
 
@@ -124,7 +252,8 @@ html,body{
 	height: 10%;
 	top: 600px;
 	float: right;
-	background-color: purple;
+	background-color: #B0272D;
+	display: block;
 
 }
 
@@ -135,19 +264,20 @@ html,body{
 	height: 10%;
 	top: 700px;
 	float: right;
-	background-color: cyan;
+	background-color: #006837;
+	display: block;
 
 }
 
 
 .stripe-9 {
-	font-family: 'PT Sans', sans-serif;
 	position:absolute;
 	width: 100%;
 	height: 10%;
 	top: 800px;
 	text-align: right;
-	color: black;
+	background-color: #8D005D;
+	display: block;
 
 }
 
@@ -156,107 +286,2400 @@ html,body{
 
 
 
+/*OTHER PAGES*/
 
-
-
-
-
-
-
-
-
-
-
-.grid-base{
-	width:100%;
-	height:100%;
-	position:absolute;
-	top:0;
-	left:0;
-	z-index:0;
-}
-
-.grid-base .col{
-	height:3000px;
-}
-
-.col{
-	border:1px dashed rgba(255,0,0,0.6);
-	display: inline-block;
-	float:left;
-	padding: 20px;
-}
-
-.col-1{
-	width:8.33%;
-}
-
-.col-2{
-	width:16.66%;
-}
-
-.col-3{
-	width:25%;
-}
-
-.col-4{
-	width:33.33%;
-}
-.col-5{
-	width:41.66%;
-}
-.col-6{
-	width:50%;
-}
-
-.col-7{
-	width:58.33%;
-}
-
-.col-8{
-	width:66.66%;
-}
-
-.col-9{
-	width:75%;
-}
-
-.col-10{
-	width:83.33%;
-}
-
-.col-11{
-	width:91.66%;
-}
-
-.col-12{
-	width:100%;
-}
-
-
-
-
-
-
-
-.graphics {
+/*.home {
 	position:absolute;
 	font-family: 'PT Sans', sans-serif;
-	text-align: left;
-	color: black;
 	font-size: 24px;
-}
+	color: white;
+	padding-right: 10%;
+
+}*/
 
 
-.top {
+
+
+.topgraphics {
 	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
 	display:inline-block;
 	width: 100%;
-	height: 10%;
-	background-color: blue;
+	background-color: #b0e9ff;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topgraphics h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topgraphics .home h1 {
+	float:right;
+	padding-right: 10%;
+
 }
 
 
 
 
 
+.textgraphics {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #299AD1;
+	margin-top:10%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+  /*logo page*/
+
+.images {
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:11%;
+}
+
+.im{
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	float: left;
+}
+
+
+
+.imagesi {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.imi{
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.imagesp {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 700px;
+	margin-bottom: 50%;
+	margin-top:175px;
+}
+
+
+.imp{
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	height: 600px;
+	width: auto;
+	float: left;
+	margin-left: 600px;
+	margin-top:175px;
+
+
+}
+
+
+
+
+.imagesa {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 725px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.ima{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imagesf {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 750px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.imf{
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.textbooks {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #299AD1;
+	margin-top:10%;
+	margin-left: 30%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.imagesb {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 798px;
+	margin-bottom: 50%;
+	margin-top:350px;
+}
+
+
+.imb{
+	display: inline-block;
+	width: 700px;
+	height: auto;
+	float: left;
+}
+
+
+
+.bookdescription {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #299AD1;
+	margin-top:10%;
+	margin-left: 47.5%;
+	line-height: 120%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfront {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-top:18%;
+	margin-left: 47.5%;
+	line-height: 120%;
+	word-spacing: 300px;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfrontc {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: white;
+	margin-top:21.5%;
+	margin-left: 48%;
+	line-height: 120%;
+	word-spacing: 270px;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+/*coinbook*/
+
+.imagesc {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 800px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.imc{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 300px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+
+/*PHOTOGRAPHY*/
+
+
+
+.topphotography {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #EA9F3B;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topphotography h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topphotography .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.textphotography {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #EA9F3B;
+	margin-top:10%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+/*fashion photography*/
+
+.photo {
+	/*position: absolute;*/
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:11%;
+}
+
+.ph{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 700px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.photol {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:11%;
+
+}
+
+.phl {
+	display: inline-block;
+	width: 900px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+.phspecial {
+	display: inline-block;
+	width: 900px;
+	height: auto;
+	float: left;
+	transform: rotate(180deg);
+}
+
+
+.phd{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 900px;
+	height: auto;
+	float: left;
+}
+
+
+.topanimation {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #662D80;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topanimation h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topanimation .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.animation{
+	width: 80%;
+	height: auto;
+	margin-top: 10%;
+	margin-left:10%;
+
+}
+
+
+
+.vid {
+	/*display: block-inline;*/
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:50%;
+	float: left;
+	margin: 20px;
+
+}
+
+/*
+.vid{
+	margin:20px;
+}*/
+
+
+.topvideo {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#EBDD21;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topvideo h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topvideo .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.video {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:10%;
+
+}
+
+
+
+
+.vid {
+	/*position: absolute;*/
+	display: inline-block;
+	width: 700px;
+	height: auto;
+	float: left;
+	
+	/*margin-left: 600px;
+	margin-bottom: 50%;*/
+}
+
+
+
+
+.top2d {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #1B1464;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+
+.top2d h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.top2d .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.text2d {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:#1B1464 ;
+	margin-top:10%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.drawingsc {
+	/*position: absolute;*/
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 600px;
+	margin-bottom: 50%;
+	margin-top:11%;
+}
+
+
+
+.drawings{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.drawingsspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 500px;
+	height: auto;
+	float: left;
+	transform: rotate(90deg);
+	margin-top:8%;
+}
+
+
+
+.c{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.topwriting {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#B0272D;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topwriting h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topwriting .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.textwriting {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:#B0272D ;
+	margin-top:10%;
+	margin-left: 30%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+.texttext {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: black;
+	margin-top:10%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+.texttext a{
+	color: black;
+}
+
+
+.thestories {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:black ;
+	margin-top:10%;
+	margin-left: 50%;
+	line-height: 250%;
+	width: 40%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.thestories a{
+	color: black;
+}
+
+
+
+.topabout {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#006837;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topabout h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topabout .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.about {
+	position: absolute;
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-left: 10%;
+	margin-bottom: 50%;
+	margin-top:11%;
+}
+
+.aboutme{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	float: left;
+}
+
+.color{
+	color: black;
+}
+
+
+.thestoriesaboutme {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:white ;
+	margin-top:10%;
+	margin-left: 50%;
+	line-height: 250%;
+	width: 40%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.textwriting a {
+	color:black;
+}
+
+.aboutmebegin {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:black ;
+	margin-top:0%;
+	margin-left: 0%;
+	line-height: 130%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+.aboutdescription {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:black ;
+	margin-top:20%;
+	margin-left: 0%;
+	line-height: 250%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1000px){ 
+
+
+/*	.topgraphics {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #b0e9ff;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}*/
+
+/*.topgraphics h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topgraphics .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}*/
+
+
+
+
+
+.textgraphics {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #299AD1;
+	margin-top:20%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+  /*logo page*/
+
+.images {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+.im{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+.imagesi {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.imi{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.imagesp {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:175px;
+}
+
+
+.imp{
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	height: 300px;
+	width: auto;
+	float: left;
+	margin-left: 400px;
+	margin-top:175px;
+
+
+}
+
+
+
+
+.imagesa {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.ima{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imagesf {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:190px;
+}
+
+
+.imf{
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.textbooks {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #299AD1;
+	margin-top:20%;
+	margin-left: 400px;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.imagesb {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:350px;
+}
+
+
+.imb{
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+.bookdescription {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: #299AD1;
+	margin-top:20%;
+	margin-left: 70%;
+	line-height: 120%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfront {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: white;
+	margin-top:33.5%;
+	margin-left: 42%;
+	line-height: 150%;
+	word-spacing: 300px;
+	width: 50%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfrontc {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: white;
+	margin-top:39%;
+	margin-left: 42%;
+	line-height: 120%;
+	word-spacing: 270px;
+	width: 50%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+/*coinbook*/
+
+.imagesc {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.imc{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+
+/*PHOTOGRAPHY*/
+
+
+
+.topphotography {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #EA9F3B;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topphotography h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topphotography .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.textphotography {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: #EA9F3B;
+	margin-top:20%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+/*fashion photography*/
+
+.photo {
+	/*position: absolute;*/
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:20%;
+}
+
+.ph{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.photol {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:20%;
+
+}
+
+.phl {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+.phspecial {
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+	transform: rotate(180deg);
+}
+
+
+.phd{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+.topanimation {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #662D80;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topanimation h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topanimation .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.animation{
+	width: 80%;
+	height: auto;
+	margin-top: 20%;
+
+}
+
+
+.vid {
+	/*display: block-inline;*/
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:50%;
+	float: left;
+	margin: 5px;
+
+}
+
+/*
+.vid{
+	margin:20px;
+}*/
+
+
+.topvideo {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#EBDD21;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topvideo h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topvideo .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.video {
+	/*position: absolute;*/
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 200px;
+	margin-bottom: 50%;
+	margin-top:40%;
+
+}
+
+
+
+
+.vid {
+	/*position: absolute;*/
+	display: inline-block;
+	width: 700px;
+	height: auto;
+	float: left;
+	
+	/*margin-left: 600px;
+	margin-bottom: 50%;*/
+}
+
+
+
+
+.top2d {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #1B1464;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+
+.top2d h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.top2d .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.text2d {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:#1B1464 ;
+	margin-top:20%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.drawingsc {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:20%;
+}
+
+
+
+.drawings{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.drawingsspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+	transform: rotate(90deg);
+	margin-top:30%;
+}
+
+
+
+.c{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.topwriting {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#B0272D;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topwriting h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topwriting .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+
+.textwriting {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:#B0272D ;
+	margin-top:20%;
+	margin-left: 40%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+.texttext {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color: black;
+	margin-top:20%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.thestories {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:white ;
+	margin-top:20%;
+	margin-left: 55%;
+	line-height: 250%;
+	width: 40%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+
+
+.topabout {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#006837;
+	font-size: 24px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topabout h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topabout .home h1 {
+	float:right;
+	padding-right: 10%;
+
+}
+
+.about {
+	position: absolute;
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-left: 4%;
+	margin-bottom: 50%;
+	margin-top:20%;
+}
+
+.aboutme{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 400px;
+	height: auto;
+	float: left;
+}
+
+.color{
+	color: black;
+}
+
+
+.thestoriesaboutme {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:white ;
+	margin-top:18%;
+	margin-left: 50%;
+	line-height: 250%;
+	width: 50%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+
+.aboutmebegin {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:black ;
+	margin-top:0%;
+	margin-left: 0%;
+	line-height: 130%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+.aboutdescription {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:black ;
+	margin-top:27%;
+	margin-left: 0%;
+	line-height: 250%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 660px){
+
+.topgraphics {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #b0e9ff;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topgraphics h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topgraphics .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+
+.textgraphics {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: #299AD1;
+	margin-top:40%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+  /*logo page*/
+
+.images {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+.im{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+.imagesi {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.imi{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.imagesp {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.imp{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	height: 200px;
+	width: auto;
+	float: left;
+	margin-left: 50px;
+	margin-top:400px;
+
+
+}
+
+
+
+
+.imagesa {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.ima{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.imagesf {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:400px;
+}
+
+
+.imf{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+
+.textbooks {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: #299AD1;
+	margin-top:40%;
+	margin-left: 200px;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.imagesb {
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 400px;
+	margin-top:550px;
+}
+
+
+.imb{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+.bookdescription {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: #299AD1;
+	margin-top:400px;
+	margin-left: 100px;
+	line-height: 120%;
+	width: 50%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfront {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: white;
+	margin-top:510px;
+	margin-left: 100px;
+	line-height: 150%;
+	word-spacing: 155px;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+
+.backfrontc {
+
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 10px;
+	color: white;
+	margin-top:560px;
+	margin-left: 100px;
+	line-height: 120%;
+	word-spacing: 155px;
+	width:90%;
+	float: left;
+	text-decoration: none;
+
+}
+
+
+/*coinbook*/
+
+.imagesc {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 100px;
+	margin-bottom: 50%;
+	margin-top:600px;
+}
+
+
+.imc{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+
+/*PHOTOGRAPHY*/
+
+
+
+.topphotography {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #EA9F3B;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topphotography h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topphotography .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+.textphotography {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: #EA9F3B;
+	margin-top:40%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+/*fashion photography*/
+
+.photo {
+	/*position: absolute;*/
+	display: block;
+	width: 40%;
+	height: auto;
+	margin-left: 150px;
+	margin-bottom: 50%;
+	margin-top:40%;
+}
+
+.ph{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+.photol {
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 150px;
+	margin-bottom: 50%;
+	margin-top:40%;
+
+}
+
+.phl {
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+	
+}
+
+
+
+.phspecial {
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+	transform: rotate(180deg);
+}
+
+
+.phd{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+.topanimation {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #662D80;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topanimation h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topanimation .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+.animation{
+	width: 80%;
+	height: auto;
+	margin-top: 50%;
+	margin-left: 40px;
+
+}
+
+
+.vid {
+	/*display: block-inline;*/
+	margin-left: 400px;
+	margin-bottom: 50%;
+	margin-top:80%;
+	float: left;
+	margin: 5px;
+
+}
+
+/*
+.vid{
+	margin:20px;
+}*/
+
+
+.topvideo {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#EBDD21;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topvideo h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topvideo .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+.video {
+	/*position: absolute;*/
+	display: block;
+	width: 70%;
+	height: auto;
+	margin-left: 50px;
+	margin-bottom: 50%;
+	margin-top:70%;
+
+}
+
+
+
+
+.vid {
+	/*position: absolute;*/
+	display: inline-block;
+	width: 900px;
+	height: auto;
+	float: left;
+	
+	/*margin-left: 600px;
+	margin-bottom: 50%;*/
+}
+
+
+
+
+.top2d {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color: #1B1464;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+
+.top2d h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.top2d .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+.text2d {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:#1B1464 ;
+	margin-top:40%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.drawingsc {
+	/*position: absolute;*/
+	display: block;
+	width: 50%;
+	height: auto;
+	margin-left: 150px;
+	margin-bottom: 50%;
+	margin-top:43%;
+}
+
+
+
+.drawings{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.drawingsspecial{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+	transform: rotate(90deg);
+	margin-top:12%;
+}
+
+
+
+.c{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+
+
+
+
+.topwriting {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#B0272D;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+
+.topwriting h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topwriting .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+
+.textwriting {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:black ;
+	margin-top:40%;
+	margin-left: 50%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+.texttext {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color: black;
+	margin-top:40%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 25%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.thestories {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:white ;
+	margin-top:70%;
+	margin-left: 10%;
+	line-height: 250%;
+	width: 80%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.color{
+	color: black;
+}
+
+
+.topabout {
+	position:absolute;
+	font-family: 'Ubuntu', sans-serif;
+	display:inline-block;
+	width: 100%;
+	background-color:#006837;
+	font-size: 14px;
+	color: white;
+	padding-left: 10%;
+	
+}
+
+.topabout h1 {
+	width: 300px;
+	display:inline-block;
+	float: left; 
+
+}
+
+
+.topabout .home h1 {
+	float:right;
+	padding-right: 25%;
+
+}
+
+.about {
+	position: absolute;
+	display: block;
+	width: 37%;
+	height: auto;
+	margin-left: 4%;
+	margin-bottom: 50%;
+	margin-top:40%;
+}
+
+.aboutme{
+	/*position: absolute;*/
+	display: inline-block;
+	width: 350px;
+	height: auto;
+	float: left;
+}
+
+.color{
+	color: black;
+}
+
+
+.thestoriesaboutme {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:white ;
+	margin-top:550px;
+	margin-left: 8%;
+	line-height: 200%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+
+
+.aboutmebegin {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 24px;
+	color:black ;
+	margin-top:0%;
+	margin-left: 0%;
+	line-height: 130%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+
+.aboutdescription {
+	position:absolute;
+	font-family: 'PT Sans', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 14px;
+	color:black ;
+	margin-top:40%;
+	margin-left: 0%;
+	line-height: 250%;
+	width: 90%;
+	float: left;
+	text-decoration: none;
+	
+}
+
+}
